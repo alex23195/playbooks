@@ -2,7 +2,7 @@
 - hosts: 192.168.150.7
 
   become: yes
-  become:user: root
+  become_user: root
   tasks:
     - name: update apt packages
       apt:
