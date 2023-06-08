@@ -2,8 +2,7 @@
 - hosts: 192.168.150.6
 
   become: yes
-  become_user: sudo
-  become_method: sudo
+  become_user: alexander
   tasks:
     - name: update apt packages
       apt:
