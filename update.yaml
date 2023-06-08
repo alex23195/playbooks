@@ -2,7 +2,6 @@
 - hosts: 192.168.150.6
 
   become: yes
-  become_user: sudo
   tasks:
     - name: update apt packages
       apt:
