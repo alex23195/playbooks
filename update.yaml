@@ -2,6 +2,7 @@
 - hosts: 192.168.150.7
 
   become: true
+  become_method: su
   tasks:
     - name: update apt packages
       apt:
