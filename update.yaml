@@ -1,9 +1,9 @@
 ---
 - hosts: 192.168.150.6
 
-  become_user: root
+  become_user: sudo
   tasks:
     - name: update apt packages
-  sudo_apt:
+  apt:
         upgrade: yes
         update_cache: yes
