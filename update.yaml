@@ -4,6 +4,6 @@
   become_user: root
   tasks:
     - name: update apt packages
-      apt:
+    sudo_apt:
         upgrade: yes
         update_cache: yes
