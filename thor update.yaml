@@ -11,7 +11,7 @@
         
     - name: Send webhook to Home Assistant
       uri:
-        url: "http://192.168.150.2:8123/api/webhook/ansible-thor-jktb5fytsiJnjV303U07kLQh"
+        url: "https://hooks.nabu.casa/gAAAAABknbYBSyYob7aqQvXG6sPjHCVrVjQWHoa8TU8n9AGoyw3jjRzghfdFVEfIiFpEEwFPK5UuDCOPXwAwA08Z2Op9K8f5DI_WjWhTyhRuTAGFTucYFtlbirwEDxXcyTjNt10VlYnh75-GZ6klR69NhVDJEiM2YnS_ZOpp3RErp2h591Gr9v0="
         method: POST
         body_format: json
         headers:
