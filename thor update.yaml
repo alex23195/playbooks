@@ -8,3 +8,13 @@
       apt:
         upgrade: yes
         update_cache: yes
+        
+    - name: Send webhook to Home Assistant
+      uri:
+        url: "http://192.168.150.2:8123/api/webhook/ansible-thor-jktb5fytsiJnjV303U07kLQh"
+        method: POST
+        body_format: json
+        headers:
+          Content-Type: "application/json"
+        body:
+          message: "Server updates and upgrades complete"
