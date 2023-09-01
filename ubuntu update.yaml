@@ -1,0 +1,9 @@
+---
+- hosts: 192.168.150.144
+
+  become: true
+  tasks:
+    - name: update apt packages
+      apt:
+        upgrade: yes
+        update_cache: yes
