@@ -2,7 +2,7 @@
 - hosts: 192.168.150.144
 
   become: true
-  become_user: alexander
+  become_user: sudo
   vars:
     ansible_host_key_checking: false
   tasks:
