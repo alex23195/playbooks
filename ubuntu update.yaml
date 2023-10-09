@@ -3,5 +3,5 @@
 
   become: true
   tasks:
-   - name: Update apt repo and cache on all Debian/Ubuntu boxes
+   - name: run cmd on target
      cmd: sudo ./update-plex.sh
