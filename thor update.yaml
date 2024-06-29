@@ -8,3 +8,11 @@
       apt:
         upgrade: yes
         update_cache: yes
+        
+- name: Send data to Home Assistant webhook
+  hosts: localhost
+  tasks:
+    - name: Trigger Home Assistant webhook
+      uri:
+        url: "http://192.168.1.180:8123/api/webhook/-_z7QJcSXSjoVXW6zXn2q7xso"
+        method: POST
