@@ -8,13 +8,3 @@
       apt:
         upgrade: yes
         update_cache: yes
-        
-    - name: Send webhook to Home Assistant
-      uri:
-        http://192.168.1.180:8123/api/webhook/-_z7QJcSXSjoVXW6zXn2q7xso
-        method: POST
-        body_format: json
-        headers:
-          Content-Type: "application/json"
-        body:
-          message: "Server updates and upgrades completed"
