@@ -11,7 +11,6 @@
         
 - name: Send data to Home Assistant webhook
   become: true
-  hosts: 192.168.1.180
   tasks:
     - name: Trigger Home Assistant webhook
       uri:
