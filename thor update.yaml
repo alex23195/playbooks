@@ -1,6 +1,6 @@
 
 ---
-- hosts: 100.118.141.31
+- hosts: 192.168.1.102
 
   become: true
   tasks:
@@ -11,7 +11,7 @@
         
     - name: Send webhook to Home Assistant
       uri:
-        url: "https://hooks.nabu.casa/gAAAAABknbYBSyYob7aqQvXG6sPjHCVrVjQWHoa8TU8n9AGoyw3jjRzghfdFVEfIiFpEEwFPK5UuDCOPXwAwA08Z2Op9K8f5DI_WjWhTyhRuTAGFTucYFtlbirwEDxXcyTjNt10VlYnh75-GZ6klR69NhVDJEiM2YnS_ZOpp3RErp2h591Gr9v0="
+        http://192.168.1.180:8123/api/webhook/-_z7QJcSXSjoVXW6zXn2q7xso
         method: POST
         body_format: json
         headers:
