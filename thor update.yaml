@@ -10,7 +10,8 @@
         update_cache: yes
         
 - name: Send data to Home Assistant webhook
-  hosts: localhost
+  become: true
+  hosts: 192.168.1.6
   tasks:
     - name: Trigger Home Assistant webhook
       uri:
